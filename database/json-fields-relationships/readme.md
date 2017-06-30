@@ -11,7 +11,7 @@ Don't worry we got you covered:
 2) You have a `City` model that holds all cities of your country.
 3) Inside the user `address` field, there is a json field holding the `city_id`
 
-### How To
+### Definition
 
 ```php
 <?php
@@ -66,5 +66,15 @@ class User extends Model
         return $this->belongsTo(City::class, 'city_id')
     }
 }
+
+```
+
+### Usage
+
+Enjoy!
+
+```php
+
+$user->city; // LaravelPorn\City
 
 ```
